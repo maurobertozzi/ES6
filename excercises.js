@@ -26,10 +26,12 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
  */
 
-// function setWidth() {
-//     var width = 100;
-// }
-// console.log(width);
+ setWidth();
+
+function setWidth() {
+	 width = 100;
+}
+console.log(width);
 
 /*
     Opgave 2.
@@ -39,12 +41,13 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
  */
 
-// var size = 100;
-// if (size > 50) {
-//     var boxSize = size * 5;
-//     console.log(boxSize);
-// }
-// console.log(boxSize);
+
+	var size = 100;
+if (size > 50) {
+     let boxSize = size * 5;
+    console.log(boxSize);
+}
+// console.log(boxSize); door let kan hij er niet bij komen
 
 /*
     Opgave 3.
@@ -55,13 +58,15 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
  */
 
-// let winningPoints = 100;
-// let bonus = false;
-//
-// if (winningPoints > 50) {
-//     let bonus = true;
-// }
-// console.log( bonus);
+ //je moet de let updaten niet opnieuw declaren	
+
+let winningPoints = 100;
+let bonus = false;
+
+if (winningPoints > 50) {
+    bonus = true;
+}
+console.log( bonus);
 
 /*
     Opgave 4.
@@ -70,6 +75,13 @@ Je code is pas goed als er geen Warnings en Errors zijn!
     HINT: Een object maak je met behulp van {}
 
  */
+const obj = {
+	name: 'harry',
+	lastname: 'peter',
+	age: '15',
+	eten: 'pannenkoek' 
+};
+console.log(obj);
 
 /*
     Opgave 5.
@@ -81,17 +93,15 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
  */
 
-// const person = {
-//     name: 'Bowie',
-//     died: 2012
-// }
-//
-// person = {
-//     name: 'Bowie',
-//     died: 2016
-// }
-//
-// console.log(person);
+const person = {
+    name: 'Bowie',
+    died: 2012
+}
+
+person.died = 2016;
+
+
+console.log(person);
 
 
 /*
@@ -106,9 +116,14 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
  */
 
-// var name = 'Lesson 1: ES6 Variables';
-// console.log(name);
-// console.log(window.name);
+(function(){
+    var foo = function() {};
+    window.onload = foo;
+    var name = 'Lesson 1: ES6 Variables';
+    console.log(name);
+    console.log(window.name);
+    // ...
+})();
 
 /*
     Opgave 7.
@@ -116,22 +131,29 @@ Je code is pas goed als er geen Warnings en Errors zijn!
     OPM: Oh ja, de naam van de variabele mag je dus niet wijzigen.
 
  */
-
+((() => {
+    const foo = () => {};
+    window.onload = foo;
+    const name = 'Lesson 1: ES6 Variables';
+    console.log(name);
+    console.log(window.name);
+    // ...
+}))();
 
 /*
     Opgave 8.
-    Onderstaande code is bijna gelijk aan de bovenstaande, voorkom dat de
+    Onderstaande code is bijna ongeveer gelijk aan de bovenstaande, voorkom dat de
     globale variabele overschreven wordt.
     OPM: Oh ja, de naam van de variabele mag je dus niet wijzigen.
 
  */
 
-// function varLeak () {
-//     name = 'een foutje';
-// }
-// varLeak();
-//
-// console.log(window.name);
+function varLeak () {
+    name = 'een foutje';
+}
+varLeak();
+
+console.log(window.name);
 
 
 /*
@@ -141,15 +163,15 @@ Je code is pas goed als er geen Warnings en Errors zijn!
 
 
  */
+var i = 0;
+for (i; i < 3; i++) {
+    console.log(i);
 
-// for (var i = 0; i < 3; i++) {
-//     console.log(i);
-//
-//     setTimeout(function () {
-//        alert ('This is number: ' + i);
-//     }, 3000);
-//
-//  }
+    setTimeout(function () {
+       alert ('This is number: ' + i);
+    }, 3000);
+
+ }
 
 
  /*
