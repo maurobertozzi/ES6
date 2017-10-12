@@ -1,0 +1,28 @@
+Opdrachten
+
+DOEL: Gebruik van arrow functies en verschillende array methods.
+
+Beschrijving
+De lijst geeft de cijfers aan voor een aantal vakken die behaald zijn. Dit is de basis voor elk van de onderstaande opdrachten
+Er zitten 20 studenten in een klas maar niet iedere student heeft de opdrachten voor elk vak ingeleverd. 
+De lijst is dus alleen gebaseerd op de ingeleverde opdrachten. 
+Als je een functie nodig hebt gebruik je een arrow functie.
+
+1.  Maak een array aan waarin je alle data zet.
+1.1 Zet de gegevens van elk vak in een aparte array.
+
+HINT: Voor de volgende opdracht zie
+    https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+
+2.  Voor elk vak geef je nu alleen de cijfers weer.
+2.1 Maak gebruik van default parameters waarbij je de arays aanvult met ontbrekende cijfers.
+    Elke niet ingeleverde opdracht krijgt een 0.
+2.2 Bereken ook het gemiddelde cijfer per vak.
+2.3 Per vak geef je alleen de voldoendes weer. (een voldoende is 5,5 of hoger.
+2.4 Bereken het gemiddelde cijfer voor alle voldoendes
+    en ook het gemiddelde voor alle onvoldoendes, hiervoor gebruik je alleen de echte onvoldoendes, dus niet de 0.
+
+3.  Geef de resultaten van alle opdrachten overzichtelijk weer in je webpagina bijv. in een tabel.
+
+
+
